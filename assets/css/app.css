@@ -1,0 +1,56 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* This file is for your main application CSS */
+
+.center-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body {
+    background-color: lightgrey;
+}
+
+.pixelated {
+    image-rendering: pixelated;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+@media (min-aspect-ratio: 0.9) {
+    #canvas {
+        height: 90vh;
+        aspect-ratio: 1;
+    }
+
+    #color-picker {
+        height: 10vh;
+        aspect-ratio: 4;
+    }
+}
+  
+@media (max-aspect-ratio: 0.9) {
+    #canvas {
+        width: 100vw;
+        aspect-ratio: 1;
+    }
+
+    #color-picker {
+        width: 45vw;
+        aspect-ratio: 4;
+    }
+}
+  

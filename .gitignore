@@ -8,3 +8,12 @@ erl_crash.dump
 *.beam
 /config/*.secret.exs
 .elixir_ls/
+
+
+# Common additions for various operating systems:
+# MacOS
+.DS_Store
+
+# Common additions for various editors:
+# JetBrains IDEA, IntelliJ, PyCharm, RubyMine etc.
+.idea 
